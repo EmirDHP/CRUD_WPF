@@ -12,9 +12,9 @@
         TextOptions.TextRenderingMode="Auto"        
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="MainWindow" Height="594" Width="1306">
+        Title="Usuarios Globables" Height="594" Width="1306">
     <Grid>
-        <Label Content="Usuarios Globales" HorizontalAlignment="Left" Margin="584,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Usuarios Globables" HorizontalAlignment="Left" Margin="584,10,0,0" VerticalAlignment="Top" FontSize="22"/>
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="25,99,0,0" VerticalAlignment="Top"/>
         <Label Content="Edad" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top"/>
         <Label Content="Genero" HorizontalAlignment="Left" Margin="25,182,0,0" VerticalAlignment="Top"/>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="CRUD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="594" Width="1306">
+    <Grid>
+        <Label Content="Usuarios Globales" HorizontalAlignment="Left" Margin="584,10,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="25,99,0,0" VerticalAlignment="Top"/>
+        <Label Content="Edad" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Genero" HorizontalAlignment="Left" Margin="25,182,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ciudad" HorizontalAlignment="Left" Margin="25,222,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.182,-3.1"/>
+        <Button x:Name="crear_btn" Content="Crear" HorizontalAlignment="Left" Margin="311,404,0,0" VerticalAlignment="Top" Width="108" Height="50" Background="#FF3AB783" BorderBrush="#FF2B835E" Click="crear_btn_Click"/>
+        <Button x:Name="actualizar_btn" Content="Actualizar" HorizontalAlignment="Left" Margin="487,404,0,0" VerticalAlignment="Top" Width="108" Height="50" BorderBrush="#FF458CA6" Background="#FF51B2D6" Click="actualizar_btn_Click"/>
+        <Button x:Name="eliminar_btn" Content="Eliminar" HorizontalAlignment="Left" Margin="657,404,0,0" VerticalAlignment="Top" Width="108" Height="50" BorderBrush="#FFA62D2D" Background="#FFE55252" Click="eliminar_btn_Click"/>
+        <Button x:Name="limpiar_btn" Content="Limpiar" HorizontalAlignment="Left" Margin="841,404,0,0" VerticalAlignment="Top" Width="108" Height="50" Background="#FF713DCD" Click="limpiar_btn_Click"/>
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="182" Margin="303,81,0,0" VerticalAlignment="Top" Width="968" Background="#FFF1F1F1" BorderBrush="#1F252549"/>
+        <TextBox x:Name="nombre_txt" HorizontalAlignment="Left" Height="23" Margin="95,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+        <TextBox x:Name="edad_txt" HorizontalAlignment="Left" Height="23" Margin="95,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+        <TextBox x:Name="genero_txt" HorizontalAlignment="Left" Height="23" Margin="95,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+        <TextBox x:Name="ciudad_txt" HorizontalAlignment="Left" Height="23" Margin="95,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="510,328,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.182,-3.1"/>
+        <TextBox x:Name="buscar_txt" HorizontalAlignment="Left" Height="23" Margin="537,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193"/>
+
+    </Grid>
+</Window>
